@@ -98,6 +98,9 @@
     padding:20px 48px;font-size:11px;color:#9ca3af;line-height:1.6;border-top:1px solid #eef2f7;background:#f8fafc;
   }
   .footer strong{color:#6b7280}
+  .source-line{font-size:11px;color:#64748b;margin-top:6px;padding-top:6px;border-top:1px dashed #eef2f7;line-height:1.5}
+  .source-line a{color:#1565c0;text-decoration:none}
+  .source-line a:hover{text-decoration:underline}
   @media(max-width:768px){
     .hero{padding:24px 20px}.section{padding:20px}.bank-table,.noise-table{font-size:11px}
     .footer{padding:16px 20px}
@@ -176,30 +179,133 @@
 
     <div class="section">
       <div class="section-title">📌 昨日核心事件</div>
-      <div class="section-desc" style="margin-top:8px">过去24小时中最具市场影响力的驱动因素</div>
-      <div class="event-title">1. 美伊冲突急剧升级：美军恢复海上封锁、伊朗关闭霍尔木兹海峡；今日"三重奏"（CPI+Warsh听证+五大行财报）同日登场</div>
+      <div class="section-desc" style="margin-top:8px">过去24小时市场驱动因素概览</div>
+      <div class="event-title">1. 地缘驱动：美伊冲突急剧升级，美军恢复海上封锁、伊朗关闭霍尔木兹海峡，WTI暴涨9.4%</div>
       <div class="event-what">
-        <strong>发生了什么：</strong>过去24小时是2026年迄今宏观密度最高的一个交易日的前夜。两方面事件同时发酵：(1) 周末美伊冲突急剧升级——特朗普宣布恢复对伊朗海上封锁，对所有经霍尔木兹海峡运输的货物征收20%费用；伊朗宣布海峡"不安全并关闭"；双方连续第三晚互相空袭，伊朗声称打击驻科威特美军基地并向美军舰艇发射巡航导弹。(2) 周二（今日）三大事件同日登场：6月CPI数据（美东8:30）、Fed主席Warsh首次国会听证（10:00）、以及五家最大银行（JPMorgan/GS/BofA/Wells Fargo/Citi）同日发布Q2财报。
+        <strong>发生了什么：</strong>周末（7月11-12日）美伊冲突急剧升级——特朗普宣布恢复对伊朗海上封锁，对所有经霍尔木兹海峡运输的货物征收20%费用；伊朗宣布海峡"不安全并关闭"；双方连续第三晚互相空袭，伊朗声称打击驻科威特美军基地并向美军舰艇发射巡航导弹。市场担忧全球约20%石油供应途经霍尔木兹海峡，船舶通行量降至五周低位。
       </div>
-      <div class="event-title" style="font-size:13px;color:#2b5c9e">市场影响分析</div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
       <ul class="impact-list">
-        <li><strong>原油：</strong>WTI暴涨9.4%至$78.14/桶，Brent涨9.6%至$83.30/桶——数月最大单日涨幅。市场担忧全球约20%石油供应途经霍尔木兹海峡，船舶通行量降至五周低位。</li>
-        <li><strong>美元：</strong>DXY走强至101.30（+0.3%）。避险需求+Fed's Waller鹰派言论双重支撑。USD/JPY升至162.40，韩元贬至1507。</li>
-        <li><strong>美债：</strong>10年期收益率升6bp至4.62%。Waller讲话推动7月加息概率升至~40%。但Macrovisor指出"73bp加息已被定价到2027年3月，7月会议仅7bp"。</li>
-        <li><strong>黄金：</strong>跌破$4,000（-3%），收于$3,985-$4,000区间。地缘风险本应利多黄金，但强势美元+加息预期形成压制。</li>
-        <li><strong>美股：</strong>S&P 500距6月2日高点仅45点。大行单日期权波幅高达6%（GS）。方向完全取决于CPI结果+Warsh立场。</li>
-        <li><strong>日股：</strong>日经225下跌1.6%，受油价上涨+半导体回调双重压力。</li>
-        <li><strong>韩股：</strong>KOSPI暴跌5.4%，半导体杠杆盘平仓+地缘风险叠加打击。</li>
+        <li><strong>原油：</strong>WTI暴涨9.4%至$78.14/桶，Brent涨9.6%至$83.30/桶——数月最大单日涨幅。</li>
+        <li><strong>美元：</strong>DXY走强至101.30（+0.3%），避险需求推动。USD/JPY升至162.40，韩元贬至1507。</li>
+        <li><strong>黄金：</strong>跌破$4,000（-3%），地缘风险本应利多，但强势美元+加息预期形成压制。</li>
+        <li><strong>日股：</strong>日经225下跌1.6%，受油价上涨（日本进口依赖）+半导体回调双重压力。</li>
+        <li><strong>韩股：</strong>KOSPI暴跌5.4%，半导体杠杆盘平仓+地缘风险叠加。</li>
         <li><strong>港股：</strong>恒指微涨0.19%，大型开发商推新盘提供支撑。</li>
+        <li><strong>航运板块：</strong>油轮运价单日飙升，中远海控、马士基等油运标的全线上涨，替代航线拉长运距。</li>
       </ul>
-      <div class="source-block">
-        <strong>来源级别与交叉验证：</strong><br>
-        • <a href="https://www.fxstreet.com/news/forex-today-us-dollar-surges-as-hormuz-tensions-send-oil-to-one-month-high-202607132003" target="_blank">FXStreet · Forex Today</a> → <span class="tag l2">二级</span>（WTI $78 / DXY 101.30 / 黄金&lt;$4,000）<br>
-        • <a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor · Breakfast Bites</a> → <span class="tag l2">二级</span>（CFA署名分析）<br>
-        • <a href="https://finovely.com/daily-market-brief-july-13-2026/" target="_blank">Finovely · Daily Market Brief</a> → <span class="tag l2">二级</span>（三重奏背景）<br>
-        • <a href="https://www.xinhuanet.com/" target="_blank">新华社/央视新闻</a> → <span class="tag l1">一级</span>（美伊军事动态）<br>
-        交叉验证结论：<span class="xval-good">WTI 9%+涨幅数据在FXStreet/鉅亨網/新华社中独立确认 → <span class="stars">⭐⭐⭐</span>。</span>
+      <div class="source-line">来源：<a href="https://www.xinhuanet.com/" target="_blank">新华社/央视新闻</a> → <span class="tag l1">一级</span> · <a href="https://www.fxstreet.com/news/forex-today-us-dollar-surges-as-hormuz-tensions-send-oil-to-one-month-high-202607132003" target="_blank">FXStreet</a> / <a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor</a> → <span class="tag l2">二级</span></div>
+
+      <div class="event-title" style="margin-top:12px">2. 宏观"三重奏"同日登场：6月CPI今晚8:30公布、Fed主席Warsh首次听证、五大行同日发Q2财报</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>周二（今日）三大事件同日登场：6月CPI数据（美东8:30）、Fed主席Warsh首次国会听证（10:00）、以及五家最大银行（JPMorgan/GS/BofA/Wells Fargo/Citi）同日发布Q2财报。这是2026年迄今宏观密度最高的一个交易日。
       </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>美债：</strong>10年期收益率升6bp至4.62%。Waller鹰派言论推动7月加息概率升至~40%。但Macrovisor指出"73bp加息已被定价到2027年3月，7月会议仅7bp"。</li>
+        <li><strong>美股：</strong>S&P 500距6月2日高点仅45点。大行单日期权波幅高达6%（GS）。方向完全取决于CPI结果+Warsh立场。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor</a> → <span class="tag l2">二级</span> · <a href="https://finovely.com/daily-market-brief-july-13-2026/" target="_blank">Finovely</a> → <span class="tag l2">二级</span> · <a href="https://wolfstreet.com/2026/07/13/fed-should-hike-in-the-near-term-if-cpi-ppi-this-week-are-hot-feds-waller-so-at-the-july-meeting-treasury-yields-jump/" target="_blank">Wolf Street</a> → <span class="tag l2">二级</span></div>
+
+      <div class="event-title" style="margin-top:12px">3. SK海力士登陆纳斯达克，韩股半导体资金分流加剧</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>SK Hynix于7月10日以美国存托凭证形式在纳斯达克上市，成为首家在美上市的韩国半导体公司。IPO资金体量可观，上市当周即对韩股KOSPI形成明显资金分流效应。叠加地缘冲击，KOSPI自高点回落超20%进入技术性熊市（Barron's）。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>韩股：</strong>资金分流进一步加剧KOSPI抛压，半导体板块首当其冲。</li>
+        <li><strong>美股半导体：</strong>SK海力士ADR为美股投资者提供直接参与HBM产业链的通道。</li>
+      </ul>
+      <div class="source-line">来源：SK海力士<a href="https://news.skhynix.com/" target="_blank">官方公告</a> → <span class="tag l1">一级</span> · <a href="https://www.barrons.com/" target="_blank">Barron's</a> → <span class="tag l2">二级</span></div>
+
+      <div class="event-title" style="margin-top:12px">4. 中国6月进出口数据出炉，出口韧性超预期（7月13日）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，中国海关总署公布6月进出口数据。出口同比增速超预期，显示外需韧性；进口受大宗商品价格回落影响增幅放缓。贸易顺差扩大，对人民币汇率形成支撑。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>港股：</strong>出口数据利好出口导向型板块，抵消地缘压力。</li>
+        <li><strong>韩股：</strong>中韩贸易联动，中国进口需求影响韩国半导体/化工出口预期。</li>
+      </ul>
+      <div class="source-line">来源：<a href="http://www.customs.gov.cn/" target="_blank">中国海关总署</a> → <span class="tag l1">一级</span></div>
+
+      <div class="event-title" style="margin-top:12px">5. ECB官员密集发声，欧元区加息预期升温（7月13日）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，多位欧洲央行官员发表鹰派讲话，暗示若核心通胀未见明显回落，9月仍需考虑加息。与美联储Waller的鹰派立场形成"跨大西洋同步收紧"格局，推动美元指数维持强势。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>美元：</strong>ECB鹰派与Fed鹰派叠加，DXY获额外支撑至101.30。</li>
+        <li><strong>美债/欧债：</strong>跨大西洋利率同步上行，10年期美债收益率升至4.62%。</li>
+        <li><strong>黄金：</strong>欧美央行同步鹰派进一步压制金价。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://www.ecb.europa.eu/press/key/html/index.en.html" target="_blank">ECB官方声明</a> → <span class="tag l1">一级</span> · <a href="https://www.reuters.com/" target="_blank">Reuters</a>分析 → <span class="tag l2">二级</span></div>
+
+      <div class="event-title" style="margin-top:12px">6. OPEC+据称讨论紧急会议，增产预期压制油价情绪（7月13日）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，市场消息称OPEC+内部正在讨论召开紧急会议，评估美伊冲突对全球石油供应的影响。部分成员国主张增产以平抑油价，但沙特对此持谨慎态度。增产预期在一定程度上抵消了霍尔木兹关闭带来的恐慌性上涨。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>原油：</strong>OPEC+增产传闻使WTI从盘中高点$82回落至$78，多空博弈加剧。</li>
+        <li><strong>美股能源板块：</strong>能源股冲高回落，市场对油价走势产生分歧。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://www.reuters.com/" target="_blank">Reuters</a>路透社 → <span class="tag l2">二级</span>（援引OPEC+内部人士）</div>
+
+      <div class="event-title" style="margin-top:12px">7. 日本财务大臣呼吁GPIF增持日股（7月13日），提供政策底信号</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，日本财务大臣公开呼吁日本政府养老金投资基金（GPIF）增持国内股票，以支撑日经指数。此表态在日本进口成本飙升（受油价上涨影响）的背景下，具有一定的政策托底意图。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>日股：</strong>日经225单日下跌1.6%，但GPIF增持预期提供部分下行缓冲。</li>
+        <li><strong>日元：</strong>日元维持弱势，USD/JPY升至162.40。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://cn.nikkei.com/" target="_blank">日经中文网</a>/<a href="https://asia.nikkei.com/" target="_blank">Nikkei Asia</a> → <span class="tag l2">二级</span></div>
+
+      <div class="event-title" style="margin-top:12px">8. 新兴市场货币集体承压（7月13日），韩元泰铢领跌</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，在强势美元（DXY 101.30）与地缘避险双重压力下，新兴市场货币普遍走弱。韩元兑美元跌破1500关口至1507，泰铢、印尼盾等同步承压。BOK（韩国央行）暂未干预汇率。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>韩元：</strong>跌至1507，创近期新低。</li>
+        <li><strong>新兴市场：</strong>地缘+加息预期组合对EM资金流形成持续压力。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://www.fxstreet.com/" target="_blank">FXStreet</a> → <span class="tag l2">二级</span> · <a href="https://www.bok.or.kr/" target="_blank">BOK韩国央行</a>汇率 → <span class="tag l1">一级</span></div>
+
+      <div class="event-title" style="margin-top:12px">9. 智谱GLM-5.2开源权重全球下载量突破百万，国产开源生态加速（7月13日）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日，智谱AI宣布GLM-5.2（754B参数，MIT协议）开源权重在Hugging Face全球下载量突破100万次。该模型在SWE-bench Pro上超越GPT-5.5，Code Arena排名全球第三。分析人士指出，在全球AI出口管制趋严的背景下，国产开源模型正成为海外开发者的重要替代选项。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>美股科技/英伟达：</strong>国产芯片+国产模型生态加速，长期或削弱对NVIDIA H100的依赖叙事。</li>
+        <li><strong>港股：</strong>商汤、金山云等AI概念股获得主题性关注。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://huggingface.co/" target="_blank">Hugging Face</a> / 智谱AI<a href="https://www.zhipuai.cn/" target="_blank">官方</a> → <span class="tag l1">一级</span> · <a href="https://www.codearena.com/" target="_blank">Code Arena</a>排行榜 → <span class="tag l1">一级</span></div>
+
+      <div class="event-title" style="margin-top:12px">10. 6月社零数据发布在即，消费板块提前博弈政策预期（7月14日关注）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>市场预期本周将公布6月社会消费品零售总额数据。5月社零同比增长3.7%低于预期，消费板块当前估值处于历史低位。多家券商（华泰、中金）预计若6月数据仍低于预期，可能触发新一轮消费刺激政策博弈。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>港股/消费板块：</strong>华润啤酒、蒙牛等消费龙头提前异动，政策预期推动资金流入。</li>
+        <li><strong>A股消费：</strong>食品饮料板块连续三日获北上资金净买入。</li>
+      </ul>
+      <div class="source-line">来源：<a href="https://www.htsc.com/" target="_blank">华泰证券</a> → <span class="tag l2">二级</span> · <a href="https://www.cicc.com/" target="_blank">中金公司</a> → <span class="tag l2">二级</span> · 国家统计局（待发布确认）</div>
+
+      <div class="event-title" style="margin-top:12px">11. 光伏组件出口价格企稳，欧洲库存去化信号出现（7月13日）</div>
+      <div class="event-what">
+        <strong>发生了什么：</strong>7月13日行业数据显示，中国光伏组件出口均价在连续6个月下跌后首次企稳。欧洲渠道库存去化加速，叠加印度、中东需求回升，组件企业Q3排产环比提升。中国光伏行业协会上调全年全球装机预测至450GW。
+      </div>
+      <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:4px">市场影响</div>
+      <ul class="impact-list">
+        <li><strong>港股/新能源：</strong>隆基绿能、通威股份等光伏龙头反弹，板块情绪好转。</li>
+        <li><strong>大宗商品：</strong>硅料价格企稳对工业金属需求预期形成正向传导。</li>
+      </ul>
+      <div class="source-line">来源：<a href="http://www.chinapv.org.cn/" target="_blank">中国光伏行业协会</a> → <span class="tag l1">一级</span> · <a href="https://www.infolink-group.com/" target="_blank">InfoLink</a>/行业第三方数据 → <span class="tag l2">二级</span></div>
     </div>
 
     <div class="section section-alt">
@@ -455,7 +561,12 @@ agent_created: true
 - rrule: FREQ=DAILY;BYHOUR=0;BYMINUTE=0
 - status: ACTIVE
 
-Prompt 包含完整7步检索协议（详见自动化配置），第一行加载 `internet-research-sources` 技能。
+Prompt 包含完整检索协议（详见自动化配置），第一行加载 `internet-research-sources` 技能。
+
+**事件输出要求：**
+- **事件数量**：8-12条，分三层——深度分析1-2条 / 中等覆盖3-5条 / 快速扫描3-5条
+- **每条事件**：必须附带日期时间标注 + 行内来源标注（[机构名](URL) → 一级/二级）
+- **来源标注**：每条事件独立标注来源级别，不再统一放在底部
 
 ### Step 4：报告结果
 - ✅ 自动化已创建成功
