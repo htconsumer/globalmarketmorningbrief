@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场晨报 · 2026-07-14</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:#f0f2f5;display:flex;justify-content:center;align-items:flex-start;
+    min-height:100vh;padding:32px;font-family:'PingFang SC','Microsoft YaHei','Helvetica Neue',sans-serif;
+  }
+  .report{
+    max-width:1100px;margin:0 auto;background:#fff;border-radius:16px;
+    box-shadow:0 4px 28px rgba(0,0,0,.06);overflow:hidden;
+  }
+  .hero{
+    background:linear-gradient(135deg,#0f1729 0%,#1a2744 50%,#0f1729 100%);
+    padding:36px 48px 28px;color:#fff;position:relative;
+  }
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:8px;background:rgba(99,179,237,0.15);
+    border:1px solid rgba(99,179,237,0.25);padding:4px 14px;border-radius:20px;
+    font-size:12px;color:#90caf9;margin-bottom:14px;
+  }
+  .hero h1{font-size:26px;font-weight:700;margin-bottom:4px}
+  .hero-sub{font-size:13px;color:#aab8d4;line-height:1.5}
+  .section{padding:28px 48px}
+  .section+.section{border-top:1px solid #eef2f7}
+  .section-alt{background:#f8fafc}
+  .section-title{
+    font-size:16px;font-weight:700;color:#0f1729;margin-bottom:4px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .section-desc{font-size:13px;color:#64748b;margin-bottom:16px;line-height:1.5}
+  .event-title{font-size:15px;font-weight:600;color:#1f2937;margin-bottom:8px;line-height:1.5}
+  .event-what{font-size:13px;color:#4b5563;line-height:1.65;margin-bottom:12px}
+  .impact-list{list-style:none;margin-bottom:12px}
+  .impact-list li{
+    padding:5px 0 5px 16px;position:relative;font-size:12.5px;color:#4b5563;line-height:1.55;
+    border-bottom:1px dashed #f0f2f5;
+  }
+  .impact-list li:last-child{border-bottom:none}
+  .impact-list li::before{content:"•";position:absolute;left:2px;color:#2b5c9e;font-weight:700}
+  .impact-list li strong{color:#1f2937}
+  .source-block{
+    background:#f8fafc;border:1px solid #eef2f7;border-radius:8px;padding:12px 16px;font-size:12px;color:#4b5563;line-height:1.6;
+  }
+  .source-block a{color:#1565c0;text-decoration:none}
+  .source-block a:hover{text-decoration:underline}
+  .source-block .stars{color:#e65100}
+  .xval-good{color:#2e7d32;font-weight:600}
+  .bank-table{width:100%;font-size:12px;border-collapse:collapse;margin-bottom:8px}
+  .bank-table th{background:#1a2744;color:#fff;padding:7px 10px;text-align:left;font-weight:500}
+  .bank-table td{padding:7px 10px;border:1px solid #e0e6ed;vertical-align:top;line-height:1.5;color:#4b5563}
+  .bank-table td:first-child{font-weight:600;color:#1f2937;white-space:nowrap;width:100px}
+  .bank-table tr:nth-child(even){background:#f8fafc}
+  .insight-block{
+    background:#e8f0fe;border:1px solid #c5d9f7;border-radius:8px;
+    padding:10px 16px;font-size:12px;color:#1f2937;line-height:1.55;margin-bottom:12px;
+  }
+  .noise-table{width:100%;font-size:12px;border-collapse:collapse}
+  .noise-table th{background:#c62828;color:#fff;padding:6px 10px;text-align:left;font-weight:500}
+  .noise-table td{padding:6px 10px;border:1px solid #f5d5d5;vertical-align:top;line-height:1.5;color:#4b5563}
+  .noise-table tr:nth-child(even){background:#fff8f8}
+  .noise-table td:first-child{font-weight:600;color:#b71c1c;width:180px}
+  .heat-high{display:inline-block;background:#c62828;color:#fff;padding:1px 8px;border-radius:3px;font-size:10px}
+  .heat-mid{display:inline-block;background:#e65100;color:#fff;padding:1px 8px;border-radius:3px;font-size:10px}
+  .tag{display:inline-block;padding:1px 6px;border-radius:3px;font-size:9px;font-weight:600;margin:1px}
+  .tag.l1{background:#e8f5e9;color:#2e7d32}
+  .tag.l2{background:#e3f2fd;color:#1565c0}
+  .focus-item{
+    background:#f1f8e9;border:1px solid #c8e6c9;border-radius:8px;
+    padding:12px 16px;margin-bottom:8px;font-size:13px;color:#1f2937;line-height:1.55;
+  }
+  .focus-item .key{
+    display:inline-block;background:#2e7d32;color:#fff;padding:1px 10px;border-radius:3px;font-size:11px;margin-right:6px;
+  }
+  .focus-item .threshold{
+    display:block;margin-top:4px;padding:6px 10px;background:#fff;border-radius:4px;
+    font-size:12px;color:#4b5563;border-left:3px solid #2e7d32;
+  }
+  .footer{
+    padding:20px 48px;font-size:11px;color:#9ca3af;line-height:1.6;border-top:1px solid #eef2f7;background:#f8fafc;
+  }
+  .footer strong{color:#6b7280}
+  @media(max-width:768px){
+    .hero{padding:24px 20px}.section{padding:20px}.bank-table,.noise-table{font-size:11px}
+    .footer{padding:16px 20px}
+  }
+</style>
+</head>
+<body>
+<div class="report">
+
+  <div class="hero">
+    <div class="hero-badge">🔬 投研搜索Skill 生成</div>
+    <h1>全球市场晨报 · 2026-07-14（周二）</h1>
+    <div class="hero-sub">分析对象：美元 / 美债 / 原油 / 黄金 / 美股 / 日股 / 韩股 / 港股</div>
+  </div>
+
+  <!-- 昨日核心事件 -->
+  <div class="section">
+    <div class="section-title">📌 昨日核心事件</div>
+    <div class="section-desc" style="margin-top:8px">过去24小时中最具市场影响力的驱动因素</div>
+
+    <div class="event-title">1. 美伊冲突急剧升级：美军恢复海上封锁、伊朗关闭霍尔木兹海峡；今日"三重奏"（CPI+Warsh听证+五大行财报）同日登场</div>
+
+    <div class="event-what">
+      <strong>发生了什么：</strong>过去24小时是2026年迄今宏观密度最高的一个交易日的前夜。两方面事件同时发酵：(1) 周末美伊冲突急剧升级——特朗普宣布恢复对伊朗海上封锁，对所有经霍尔木兹海峡运输的货物征收20%费用；伊朗宣布海峡"不安全并关闭"；双方连续第三晚互相空袭，伊朗声称打击驻科威特美军基地并向美军舰艇发射巡航导弹。(2) 周二（今日）三大事件同日登场：6月CPI数据（美东8:30）、Fed主席Warsh首次国会听证（10:00）、以及五家最大银行（JPMorgan/GS/BofA/Wells Fargo/Citi）同日发布Q2财报。
+    </div>
+
+    <div class="event-title" style="font-size:13px;color:#2b5c9e">市场影响分析</div>
+    <ul class="impact-list">
+      <li><strong>原油：</strong>WTI暴涨9.4%至$78.14/桶，Brent涨9.6%至$83.30/桶——数月最大单日涨幅。市场担忧全球约20%石油供应途经霍尔木兹海峡，船舶通行量降至五周低位。</li>
+      <li><strong>美元：</strong>DXY走强至101.30（+0.3%）。避险需求+Fed's Waller鹰派言论（"若CPI/PPI hot则需near term加息"）双重支撑。USD/JPY升至162.40，韩元贬至1507。</li>
+      <li><strong>美债：</strong>10年期收益率升6bp至4.62%。Waller讲话推动7月加息概率升至~40%。但Macrovisor指出"73bp加息已被定价到2027年3月，7月会议仅7bp"——说明市场预期步调偏慢。</li>
+      <li><strong>黄金：</strong>跌破$4,000（-3%），收于$3,985-$4,000区间。宏观矛盾凸显：地缘风险本应利多黄金，但强势美元+加息预期（提高持有黄金的机会成本）形成压制。HSBC指出金价走势完全取决于今日CPI。</li>
+      <li><strong>美股：</strong>S&P 500距6月2日高点仅45点。大行单日期权波幅高达6%（GS）。市场整体处于"暴风雨前的平衡"——方向完全取决于CPI结果+Warsh立场。</li>
+      <li><strong>日股：</strong>日经225下跌1.6%，受油价上涨（日本进口依赖）+半导体回调双重压力。财务大臣呼吁养老金增持日股，提供部分支撑。</li>
+      <li><strong>韩股：</strong>KOSPI暴跌5.4%，半导体杠杆盘平仓+地缘风险叠加打击。KOSPI此前已从高点回落超20%进入技术性熊市（Barron's）。SK Hynix 7月10日纳斯达克上市资金可能分流韩股流动性。</li>
+      <li><strong>港股：</strong>恒指微涨0.19%，大型开发商推新盘提供支撑抵消地缘压力。</li>
+    </ul>
+
+    <div class="source-block">
+      <strong>来源级别与交叉验证：</strong><br>
+      • <a href="https://www.fxstreet.com/news/forex-today-us-dollar-surges-as-hormuz-tensions-send-oil-to-one-month-high-202607132003" target="_blank">FXStreet · Forex Today</a> → <span class="tag l2">二级</span>（WTI $78 / DXY 101.30 / 黄金&lt;$4,000）<br>
+      • <a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor · Breakfast Bites</a> → <span class="tag l2">二级</span>（CFA署名分析，WTI~$75 / KOSPI-8% / GS预测）<br>
+      • <a href="https://finovely.com/daily-market-brief-july-13-2026/" target="_blank">Finovely · Daily Market Brief</a> → <span class="tag l2">二级</span>（CPI/Warsh/银行同日三重奏背景）<br>
+      • <a href="https://www.xinhuanet.com/" target="_blank">新华社/央视新闻</a> → <span class="tag l1">一级</span>（美伊军事动态）<br>
+      交叉验证结论：<span class="xval-good">WTI 9%+涨幅数据在FXStreet/鉅亨網/新华社中独立确认 → <span class="stars">⭐⭐⭐</span>。油价受美伊冲突驱动、黄金受加息预期压制的逻辑在多个来源中一致。</span>
+    </div>
+  </div>
+
+  <!-- 大行观点比较 -->
+  <div class="section section-alt">
+    <div class="section-title">🏦 大行观点比较</div>
+    <div class="section-desc">同一话题下不同机构的多空立场横评</div>
+
+    <div class="event-title" style="font-size:13px;color:#2b5c9e">关于油价前景：战争溢价 vs 结构性供应过剩的核心矛盾</div>
+    <table class="bank-table">
+      <tr><th>投行/机构</th><th>观点</th><th>核心逻辑</th><th>来源</th></tr>
+      <tr><td>Goldman Sachs</td><td>中期偏空，替代运输线可缓解</td><td>2028年底前可让超60%的波斯湾原油出口绕开霍尔木兹；2027年底前新增380万桶/日替代运能</td><td><a href="https://news.cnyes.com/news/id/6533186" target="_blank">鉅亨網</a></td></tr>
+      <tr><td>Saxo Bank</td><td>油价短期偏多，$80是关键</td><td>若油价突破$80则改变通胀测算，7月29日Fed会议降息空间关闭</td><td><a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor</a></td></tr>
+      <tr><td>Investing.com</td><td>结构性看空——供应过剩压倒战争溢价</td><td>全球需求收缩（IEA预计-110万桶/日），伊朗原油回流，美国产量纪录新高，OPEC+增产。WTI回调目标$66-$69</td><td><a href="https://www.investing.com/analysis/oils-bearish-supply-shift-is-overpowering-the-geopolitical-risk-premium-200683748" target="_blank">Investing.com</a></td></tr>
+      <tr><td>国泰海通</td><td>扰动短期，中长期流动性压力缓和</td><td>若CPI回落+7月FOMC未释放更多鹰派信号，则加息担忧缓解</td><td><a href="https://finance.sina.com.cn/stock/hkstock/hkgg/2026-07-14/doc-inihtmei4093674.shtml" target="_blank">新浪财经</a></td></tr>
+    </table>
+    <div class="insight-block">
+      💡 <strong>投研搜索Skill 分析：</strong>四家机构的立场形成了清晰的<strong>多空分歧</strong>。Saxo Bank偏短期战术性看多（$80突破将改变Fed预期），Investing.com和GS偏中期结构性看空（供应过剩是主导力量），国泰海通持中性等待CPI数据。利益立场标注：GS/Saxo Bank为美资/欧资投行，Investing.com为独立研究平台，国泰海通为中资投行。
+    </div>
+
+    <div class="event-title" style="font-size:13px;color:#2b5c9e;margin-top:8px">关于CPI与Fed政策路径</div>
+    <table class="bank-table">
+      <tr><th>机构</th><th>观点</th><th>核心逻辑</th><th>来源</th></tr>
+      <tr><td>Goldman Sachs</td><td>核心CPI仅0.17%（远低于共识0.3%）</td><td>弱势汽车、温和住房及降温旅行价格；若正确则消除加息预期</td><td><a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor</a></td></tr>
+      <tr><td>UBS</td><td>核心CPI 0.21%，也低于共识</td><td>同样认为核心通胀偏软</td><td><a href="https://macrovisor.substack.com/p/breakfast-bites-war-cpi-and-the-banks" target="_blank">Macrovisor</a></td></tr>
+      <tr><td>Fed's Waller</td><td>若CPI/PPI hot则需"near term"加息</td><td>担心重演2021年通胀；核心商品价格压力持续</td><td><a href="https://wolfstreet.com/2026/07/13/fed-should-hike-in-the-near-term-if-cpi-ppi-this-week-are-hot-feds-waller-so-at-the-july-meeting-treasury-yields-jump/" target="_blank">Wolf Street</a></td></tr>
+    </table>
+    <div class="insight-block">
+      💡 <strong>投研搜索Skill 分析：</strong>GS和UBS的核心CPI预测大幅低于共识——差距达0.13个百分点，足以令利率市场重新定价。Waller的鹰派言论代表了Fed内部分裂的"另一边"。今日CPI（北京时间20:30）将决定哪一方预测正确。
+    </div>
+  </div>
+
+  <!-- 市场噪音 -->
+  <div class="section">
+    <div class="section-title">🔔 市场噪音</div>
+    <div class="section-desc">前一日传播广泛但经核实不准确或存在误导的信息</div>
+    <table class="noise-table">
+      <tr><th>噪音内容</th><th>热度</th><th>核实结论</th></tr>
+      <tr>
+        <td>"霍尔木兹海峡已全面关闭，原油供应彻底中断"</td>
+        <td><span class="heat-high">高</span></td>
+        <td><strong>不准确。</strong>伊朗宣布关闭但美军中央司令部表示"通行仍在继续"。Marine trackers统计过去24小时仍有21-31艘商船通过。核实来源：<a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank">Schwab</a></td>
+      </tr>
+      <tr>
+        <td>"Fed已确定7月加息"</td>
+        <td><span class="heat-high">高</span></td>
+        <td><strong>过早判断。</strong>Waller是鹰派但非FOMC主席。CME FedWatch显示7月加息概率~40%（非确定性）。6月FOMC纪要显示"少数参与者"看到加息理由。核实来源：<a href="https://wolfstreet.com/2026/07/13/fed-should-hike-in-the-near-term-if-cpi-ppi-this-week-are-hot-feds-waller-so-at-the-july-meeting-treasury-yields-jump/" target="_blank">Wolf Street</a></td>
+      </tr>
+      <tr>
+        <td>"油价暴涨说明新一轮通胀已确立"（雪球/知乎热议）</td>
+        <td><span class="heat-mid">中</span></td>
+        <td><strong>不完全。</strong>原油确实单日暴涨9%+，但GS/Treasury desk认为当前油价水平尚不会溢出至核心通胀。决定性的因素是今日CPI数据。来源：Macrovisor</td>
+      </tr>
+      <tr>
+        <td>"AI泡沫正在破裂，半导体股将暴跌"（雪球用户热议）</td>
+        <td><span class="heat-mid">中</span></td>
+        <td><strong>无法验证。</strong>KOSPI暴跌5.4%确实与半导体杠杆平仓有关，但S&P 500距历史高点仅45点。当前更接近获利了结+地缘冲击的短期回调。标注为"未经独立验证，市场讨论线索"</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 今日关注 -->
+  <div class="section section-alt" style="border-top:1px solid #eef2f7">
+    <div class="section-title">📅 今日关注</div>
+    <div class="section-desc">前一日收盘后至今日开盘前值得跟踪的事件</div>
+
+    <div class="focus-item">
+      <strong>🕐 20:30 北京时间</strong> → 美国6月CPI数据<br>
+      <span style="color:#64748b;font-size:12px">共识：Headline 3.8% YoY · 核心2.9% YoY · 月环比核心0.2%</span>
+      <div class="threshold">
+        <strong>关键阈值参考</strong>（来源：Macrovisor / Goldman Sachs）：<br>
+        若核心CPI月环比 <strong>≤0.2%</strong> → 美元走弱、美债收益率下行、黄金反弹、成长股上涨<br>
+        若 <strong>≥0.3%</strong> → 加息预期强化，美元/美债收益率/油价"三高"压制风险资产<br>
+        <span style="color:#2e7d32">GS和UBS均预测低于共识（0.17%/0.21%），与共识的0.3%差距足以引发市场波动。</span>
+      </div>
+    </div>
+
+    <div class="focus-item">
+      <strong>🕐 22:00 北京时间</strong> → Fed主席Warsh首次国会听证<br>
+      市场关注其对通胀路径、内部分歧（"family fight"）的表态。
+    </div>
+
+    <div class="focus-item">
+      <strong>🏦 五大行Q2财报同日发布</strong><br>
+      JPMorgan / Goldman Sachs / BofA / Wells Fargo / Citi。市场预期EPS差异较大（GS预期EPS $14.51），单日期权波幅高达6%。重点关注CEO对消费者信贷质量和贷款需求的前瞻评论。
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>⚠️ 研究局限声明：</strong>本晨报基于公开信息整理，不构成投资建议。大行观点包含利益立场，仅供参考。<br>
+    <strong>本次使用的搜索工具：</strong>EXA [✅] · AnySearch [✅] · WebSearch [—]
+  </div>
+
+</div>
+</body>
+</html>
